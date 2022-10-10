@@ -1,0 +1,122 @@
+body {
+    font-family: "Open Sans", Helvetica, sans-serif;
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.42;
+    background: #17191C;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.logo__h1 {
+    font-size: 37px;
+    font-weight: 700;
+}
+
+a {
+    color: inherit;
+}
+
+ul {
+    padding: 0;
+    margin: o;
+}
+
+ul li {
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: normal;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1920px;
+}
+
+.header {
+    height: 120px;
+    position: relative;
+    margin-bottom: 150px;
+}
+
+.logo {
+
+    color: transparent;    
+	-webkit-background-clip: text;
+	background-clip: text;
+	background-image: linear-gradient(88deg, #8F00FF, #00A3FF);
+    display: block;
+    position: absolute;
+    left: 380px;
+    top: 14px;
+    text-decoration: none;
+}
+
+.menu {
+    position: absolute;
+    top: 13px;
+    left: 803px;
+}
+
+.contacts {
+    position: absolute;
+    top: 19px;
+    left: 1333px;
+    font-style: normal;
+    text-align: right;
+}
+
+.menu__item {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 62px;
+}
+
+.menu__link {
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.contacts__phone {
+    text-decoration: none;
+    font-size: 26px;
+    margin-bottom: 4px;
+}
+
+.contacts__dropdown-title {
+    font-size: 13px;
+    text-decoration: underline;
+}
+
+.hero__text-section {
+    width: 640px;
+}
+
+.hero__title {
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 21px;
+}
+
+.hero__subtitle {
+    font-size: 28.6px;
+    margin-bottom: 45px;
+}
+
+.btn {
+    background: #8F00FF;
+    border-radius: 5px;
+    padding: 18px 40px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #741BBA;
+}
