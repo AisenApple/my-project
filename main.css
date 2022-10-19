@@ -35,6 +35,23 @@ p {
     box-sizing: border-box;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+}
+
+body, html {
+    height: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    overflow: hidden;
+    min-width: 1200px;
+}
+
 .main-page-wrapper {
     background: url("./img/first_photo.png") center top no-repeat, url("./img/second_photo.png") right bottom 300px no-repeat;
 }
@@ -43,12 +60,35 @@ p {
     margin: 0 auto;
     width: 1140px;
     position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hero__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .header {
-    height: 120px;
+    padding-top: 34px;
     position: relative;
     margin-bottom: 82px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__col {
+    display: flex;
+    align-items: center;
+
+}
+
+.header__col--align--right {
+    justify-content: flex-end;
 }
 
 .logo {
@@ -57,23 +97,19 @@ p {
 	-webkit-background-clip: text;
 	background-image: linear-gradient(88deg, #8F00FF, #00A3FF);
     display: block;
-    position: absolute;
     left: 0px;
-    top: 13px;
     text-decoration: none;
     font-size: 37px;
     font-weight: 700;
+    margin-right: 207px;
 }
 
 .menu {
-    position: absolute;
-    top: 28px;
-    left: 422px;
+   
 }
 
 .contacts {
     position: absolute;
-    top: 18px;
     right: 0px;
     font-style: normal;
     text-align: right;
@@ -116,7 +152,7 @@ p {
 }
 
 .hero__text-section {
-    width: 637px;
+    width: 63%;
 }
 
 .hero__title {
@@ -193,8 +229,9 @@ p {
     line-height: 42px;
 }
 
-.offers {
-    margin-bottom: 130px;
+.offers__list {
+    display: flex;
+    justify-content: space-between;
 }
 
 .offers__main-title {
@@ -204,18 +241,18 @@ p {
 }
 
 .offers__header-img {
-    display: inline-block;
+    display: flex;
+    justify-content: space-between;
     vertical-align: middle;
 }
 
 .offers__item {
+    overflow: hidden;
     min-height: 305px;
     background: #fff;
     border-radius: 4px;
-    display: inline-block;
     vertical-align: top;
-    margin-right: 22px;
-    width: 362px;
+    width: calc(100% / 3 - 18px);
 }
 
 .offers__item:last-child {
@@ -290,15 +327,19 @@ p {
 
 .news__list {
     margin-bottom: 57px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .news__item {
-    margin-right: 21px;
-    margin: 10px;
+    flex: 1;
+    margin: 0.2%;
     width: 557px;
     display: inline-block;
     vertical-align: top;
     position: relative;
+    overflow: hidden;
+    border-radius: 4px;
 }
 
 .news__item:last-child {
@@ -340,22 +381,30 @@ p {
 }
 
 .pager {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.pager__display, .pager__list {
-    display: inline-block;
-    vertical-align: middle;
+.pager--theme--light {
+    color: #000;
+}
+
+.pager--theme--light .pager__item--active .pager__link {
+    color: #fff;
 }
 
 .pager__display {
     margin-right: 22px;
 }
 
+.pager__list {
+    display: flex;
+    align-items: center;
+}
+
 .pager__item {
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: -2px;
+   text-align: center;
 }
 
 .pager__item--active .pager__link{
@@ -378,12 +427,11 @@ p {
 }
 
 .about {
-    margin-bottom: 51px;
+    display: flex;
 }
 
 .about__container:before, .about__desc {
-    display: inline-block;
-    vertical-align: top;
+    
 }
 
 .about__container:before {
@@ -400,11 +448,12 @@ p {
     display: inline-block;
     background: linear-gradient(71.43deg, #8F00FF 0%, #148CFF 100%), #212121;
     padding: 78px 203px 70px 81px;
-    width: 785px;
+    max-width: 785px;
     min-height: 455px;
     margin-left: 352px;
     margin-top: -409px;
     border-radius: 5px;
+    display: block;
 }
 
 .about__title {
@@ -428,8 +477,24 @@ p {
 }
 
 .footer {
-    height: 120px;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__col {
+    display: flex;
+    align-items: center;
+}
+
+.footer__col--align--right {
+    align-items: flex-end;
+}
+
+.footer-container__section {
+    height: 120px;
+    margin-top: 12px;
 }
 
 .footer-container__content {
@@ -457,9 +522,7 @@ p {
 }
 
 .socials {
-    position: absolute;
-    top: 23px;
-    right: 256px;
+    margin-right: 229px;
 }
 
 .socials__item :last-child {
@@ -496,4 +559,131 @@ p {
 
 .socials__item--icon-insta :hover {
     background-image: url(./img/insta__hover.png);
+}
+
+/*Раздел игры*/
+
+.top-line {
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    background: url("./img/first_photo.png") right 20% top no-repeat;
+}
+
+.top-line__container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.page-title {
+    font-size: 72px;
+    line-height: 1;
+    font-weight: bold;
+}
+
+.breadcrumbs__list {
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumbs__item {
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumbs__item--active .breadcrumbs__link {
+    color: #9A9A9A;
+    font-weight: bold;
+}
+
+.breadcrumbs__item::after {
+    content: " / ";
+}
+
+.breadcrumbs__item:last-child::after {
+    display: none;
+}
+
+.breadcrumbs__link {
+    color: #9A9A9A;
+    font-size: 14px;   
+}
+
+.page__content {
+    background: #F2F2F2;
+    color: #303030;
+    padding: 110px 0;
+}
+
+.services {
+    margin-bottom: 65px;
+}
+
+.service {
+    display: flex;
+}
+
+.service__img {
+    width: 30%;
+    margin-right: 7%;
+}
+
+.service__content {
+    flex: 1;
+}
+
+.service__title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 22px;
+    color: #000;
+}
+
+.service__desc {
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.inner-section {
+    background: #fff;
+    color: #1A1B1E;
+    padding: 88px 0;
+}
+
+.inner-section__title {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 75px;
+}
+
+.partners {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.partners__item {
+    margin-left: 46px;
+}
+
+.partners__item:nth-child(4n + 1) {
+    margin-left: 0;
+}
+
+.partners__link {
+    text-decoration: none;
+    display: flex;
+    width: 270px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner-footer__container {
+    padding: 45px;
+}
+
+.inner-footer {
+    margin-top: auto;
 }
