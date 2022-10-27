@@ -7,7 +7,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="main.css">
 </head>
 <!--Главная-->
@@ -16,10 +18,10 @@
     <div class="wrapper">
         <section class="top-line">
             <div class="container top-line__container">
-                <header class="header">
+                <header class="header top-line__header">
                     <div class="header__col">
                         <a href="/" class="logo">Quiz-box</a>
-                        <nav class="menu">
+                        <nav class="menu header__menu">
                             <ul class="menu__list">
                                 <li class="menu__item"> <a href="/index.html" class="menu__link">Главная</a></li>
                                 <li class="menu__item"> <a href="/games.html" class="menu__link">Игры</a></li>
@@ -34,49 +36,56 @@
                         </address>
                     </div>
                 </header>
+                <h1 class="page-title">Игры</h1>
+                <nav class="breadcrumbs">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__item">
+                            <a href="#" class="breadcrumbs__link">Главная</a>
+                        </li>
+                        <li class="breadcrumbs__item breadcrumbs__item--active">
+                            <a href="#" class="breadcrumbs__link">Услуги</a>
+                        </li>
+                    </ul>
+                </nav>
+
             </div>
-            <h1 class="page-title">Игры</h1>
-            <nav class="breadcrumbs">
-                <ul class="breadcrumbs__list">
-                    <li class="breadcrumbs__item">
-                        <a href="#" class="breadcrumbs__link">Главная</a>
-                    </li>
-                    <li class="breadcrumbs__item breadcrumbs__item--active">
-                        <a href="#" class="breadcrumbs__link">Игры</a>
-                    </li>
-                </ul>
-            </nav>
         </section>
-        <main class="page__content">
+        <main class="page-content">
             <div class="container">
                 <ul class="services">
-                    <li class="services__item service">
-                        <div class="services__img">
-                            <img src="./img/music__game--games.png" alt="service__img-elem" class="sevices__img-elem">
+                    <li class="service__item service">
+                        <div class="service__img">
+                            <img src="./img/music__game--games.png" alt="service__img-elem" class="service__img-elem">
                         </div>
                         <div class="service__content">
                             <h2 class="service__title">
                                 Музыкальная игра
                             </h2>
-                            <div class="sevice__desc">
+                            <div class="service__desc">
                                 <p>
-                                    Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей. 
+                                    Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько
+                                    абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору
+                                    отточить навык публичных выступлений в домашних условиях. При создании генератора мы
+                                    использовали небезизвестный универсальный код речей.
                                 </p>
                             </div>
                             <a href="" class="btn btn--color--white">Подробнее</a>
                         </div>
                     </li>
                     <li class="services__item service">
-                        <div class="services__img">
-                            <img src="./img/back__90--games.png" alt="service__img-elem" class="sevices__img-elem">
+                        <div class="service__img">
+                            <img src="./img/back__90--games.png" alt="service__img-elem" class="service__img-elem">
                         </div>
                         <div class="service__content">
                             <h2 class="service__title">
                                 Назад в 90-е
                             </h2>
-                            <div class="sevice__desc">
+                            <div class="service__desc">
                                 <p>
-                                    Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей. 
+                                    Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько
+                                    абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору
+                                    отточить навык публичных выступлений в домашних условиях. При создании генератора мы
+                                    использовали небезизвестный универсальный код речей.
                                 </p>
                             </div>
                             <a href="" class="btn btn--color--white">Подробнее</a>
@@ -98,60 +107,61 @@
             </div>
         </main>
         <section class="inner-section">
-            <h2 class="inner-section__title">Партнеры</h2>
-            <ul class="partners">
-                <li class="partners__item">
-                    <a href="" class="partners__list">
+            <div class="container">
+                <h2 class="inner-section__title">Партнеры</h2>
+                <ul class="partners">
+                    <li class="partners__item">
+                        <a href="" class="partners__link">
                         <img src="./partners/pobeda.png" alt="pobeda">
-                    </a>
-                </li>
-                <li class="partners__item">
-                    <a href="" class="partners__list">
-                        <img src="./partners/s7.png" alt="s7">
-                    </a>
-                </li>
-                <li class="partners__item">
-                    <a href="" class="partners__list">
-                        <img src="./partners/kvizpliz.png" alt="kvizpliz">
-                    </a>
-                </li>
-                <li class="partners__item">
-                    <a href="" class="partners__list">
-                        <img src="./partners/kvizliga.png" alt="kvizliga">
-                    </a>
-                </li>
-                <li class="partners__item">
-                    <a href="" class="partners__list">
-                        <img src="./partners/kvesroom.png" alt="kvesroom">
-                    </a>
-                </li>
-                <li class="partners__item">
-                    <a href="" class="partners__list">
-                        <img src="./partners/pegasus.png" alt="pegasus">
-                    </a>
-                </li>
-                <li class="partners__item">
-                    <a href="" class="partners__list">
-                        <img src="./partners/airbaltic.png" alt="airbaltic">
-                    </a>
-                </li>
-                <li class="partners__item">
-                    <a href="" class="partners__list">
-                        <img src="./partners/pegas.png" alt="pegas">
-                    </a>
-                </li>
+                        </a>
+                    </li>
+                    <li class="partners__item">
+                        <a href="" class="partners__link">
+                            <img src="./partners/s7.png" alt="s7">
+                        </a>
+                    </li>
+                    <li class="partners__item">
+                        <a href="" class="partners__link">
+                            <img src="./partners/kvizpliz.png" alt="kvizpliz">
+                        </a>
+                    </li>
+                    <li class="partners__item">
+                        <a href="" class="partners__link">
+                            <img src="./partners/kvizliga.png" alt="kvizliga">
+                        </a>
+                    </li>
+                    <li class="partners__item">
+                        <a href="" class="partners__link">
+                            <img src="./partners/kvesroom.png" alt="kvesroom">
+                        </a>
+                    </li>
+                    <li class="partners__item">
+                        <a href="" class="partners__link">
+                            <img src="./partners/pegasus.png" alt="pegasus">
+                        </a>
+                    </li>
+                    <li class="partners__item">
+                        <a href="" class="partners__link">
+                            <img src="./partners/airbaltic.png" alt="airbaltic">
+                        </a>
+                    </li>
+                    <li class="partners__item">
+                        <a href="" class="partners__link">
+                            <img src="./partners/pegas.png" alt="pegas">
+                        </a>
+                    </li>
+            </div>
             </ul>
         </section>
-        <footer class="inner-footer">
-            <div class="container inner-footer__container">
-                <footer class="footer-container">
-                    <div class="container footer-container__content">
+                <footer class="inner-footer">
+                    <div class="container inner-footer__container">
                         <div class="footer">
                             <div class="footer__col">
                                 <a href="/" class="logo">Quiz-box</a>
                                 <nav class="menu">
                                     <ul class="menu__list menu__list--footer">
-                                        <li class="menu__item"> <a href="/index.html" class="menu__link">Главная</a></li>
+                                        <li class="menu__item"> <a href="/index.html" class="menu__link">Главная</a>
+                                        </li>
                                         <li class="menu__item"> <a href="/games.html" class="menu__link">Игры</a></li>
                                         <li class="menu__item"> <a href="#" class="menu__link">Отзывы</a></li>
                                     </ul>
@@ -184,4 +194,5 @@
         </footer>
     </div>
 </body>
+
 </html>
