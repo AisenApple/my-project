@@ -1,0 +1,21 @@
+.central {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: bounce 1.3s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.central__logo {
+    margin-bottom: 65px;
+    white-space: nowrap;
+    color: transparent;    
+	-webkit-background-clip: text;
+	background-image: linear-gradient(88deg, #8F00FF, #00A3FF);
+    display: block;
+    text-decoration: none;
+    font-size: 72px;
+    font-weight: 700;
+    margin-right: 0;
+}

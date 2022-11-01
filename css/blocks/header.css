@@ -1,0 +1,22 @@
+.header {
+    padding-top: 21px;
+    position: relative;
+    margin-bottom: 136px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__col {
+    display: flex;
+    align-items: center;
+
+}
+
+.header__col--align--right {
+    justify-content: flex-end;
+}
+
+.header__menu {
+    padding-left: 131px;
+}

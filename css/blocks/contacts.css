@@ -1,0 +1,56 @@
+.dropdown {
+    position: relative;
+}
+
+.dropdown:hover .dropdown__menu{
+    display: block;
+}
+
+.dropdown__menu {
+    position: absolute;
+    background: #EDEDED;
+    border-radius: 5px;
+    padding: 18px;
+    height: 80px;
+    width: 160px;
+    top: 100%;
+    right: -20px;
+    display: none;
+}
+
+.dropdown__item {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 21px;
+    color: #1E1F20;
+}
+
+.hero__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contacts {
+    right: 0px;
+    font-style: normal;
+    text-align: right;
+}
+
+.contacts__desc {
+    color:#9A9A9A;
+    font-size: 11px;
+    margin-bottom: 4px;
+}
+
+.contacts__phone {
+    text-decoration: none;
+    font-size: 26px;
+    line-height: 30px;
+}
+
+.contacts__dropdown-title {
+    font-size: 13px;
+    text-decoration: underline;
+    line-height: 1;
+}
