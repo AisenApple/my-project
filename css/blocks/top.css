@@ -2,7 +2,7 @@
     min-height: 412px;
     display: flex;
     flex-direction: column;
-    background: url("./img/first_photo.png") center center / cover no-repeat;
+    background: url("../../img/first_photo.png") center center / cover no-repeat;
     padding-bottom: 23px;
 }
 

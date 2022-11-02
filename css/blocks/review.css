@@ -32,7 +32,7 @@
 }
 
 .review__user:after {
-    content: url("./img/vk-blue.png");
+    content: url("../../img/vk-blue.png");
     height: 29px;
 }
 
