@@ -22,13 +22,16 @@
 }
 
 .btn--theme--transparent {
+    text-transform: capitalize;
     background: transparent;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
     color: white;
-    padding: 21px 41px;
     border: none;
+    padding: 0 21px 90px;
 }
 
 .btn--theme--transparent:hover {
     color: red;
-    text-transform: none;
 }
